@@ -40,14 +40,8 @@ dialog {
   /* animation: modal 0.3s ease-out forwards; */
 }
 
-.modal-enter-from {
-}
-
 .modal-enter-active {
   animation: modal 0.3s ease-out;
-}
-
-.modal-enter-to {
 }
 
 .modal-leave-active {
@@ -59,6 +53,7 @@ dialog {
     opacity: 0;
     transform: translateY(-50px) scale(0.9);
   }
+
   to {
     opacity: 1;
     transform: translateY(0) scale(1);
