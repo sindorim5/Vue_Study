@@ -12,9 +12,11 @@ export default {
     //   return this.$store.getters.finalCounter;
     // },
     counter() {
-      return this.$store.state.counter;
+      // return this.$store.state.counter;
+      return this.$store.state.numbers.counter;
     },
-    ...mapGetters(['finalCounter']),
+    // ...mapGetters(['finalCounter']),
+    ...mapGetters('numbers', ['finalCounter']),
   },
 };
 </script>
